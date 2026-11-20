@@ -15,8 +15,8 @@ class SuppliersController extends Controller
      */
     public function index()
     {
-        $suppliers = Suppliers::latest()->paginate(10);
-        return view('suppliers.index', compact('suppliers'));
+       $suppliers = Suppliers::latest()->paginate(10);
+       return view('suppliers.index', compact('suppliers'));
     }
 
     /**
@@ -49,7 +49,7 @@ class SuppliersController extends Controller
      */
     public function show(Suppliers $suppliers)
     {
-        //
+        return view('suppliers.show', compact('supplier'));
     }
 
     /**

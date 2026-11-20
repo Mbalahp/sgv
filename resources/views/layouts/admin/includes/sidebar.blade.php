@@ -14,6 +14,16 @@
                     </li>
                     <li class="nxl-item nxl-hasmenu">
                         <a href="javascript:void(0);" class="nxl-link">
+                            <span class="nxl-micon"><i class="feather-truck"></i></span>
+                            <span class="nxl-mtext">Fornecedor</span><span class="nxl-arrow"><i class="feather-chevron-right"></i></span>
+                        </a>
+                        <ul class="nxl-submenu">
+                            <li class="nxl-item"><a class="nxl-link" href="{{ route('suppliers.index') }}">Fornecedor</a></li>
+                            <li class="nxl-item"><a class="nxl-link" href="{{ route('Analytics') }}">Analytics</a></li>
+                        </ul>
+                    </li>
+                    <li class="nxl-item nxl-hasmenu">
+                        <a href="javascript:void(0);" class="nxl-link">
                             <span class="nxl-micon"><i class="feather-airplay"></i></span>
                             <span class="nxl-mtext">Dashboards</span><span class="nxl-arrow"><i class="feather-chevron-right"></i></span>
                         </a>
