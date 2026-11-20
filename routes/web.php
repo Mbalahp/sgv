@@ -3,7 +3,9 @@
 use App\Http\Controllers\Teams\TeamInvitationController;
 use App\Http\Middleware\EnsureTeamMembership;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\SuppliersController;
 
+Route::resource('suppliers',SuppliersController::class);
 Route::get('/', function () {
     return view('admin.dashboards.index.index');
 })->name('index');
